@@ -1,0 +1,4 @@
+*.html linguist-language=python
+*.csvv linguist-language=python
+*.ipynb linguist-language=python 
+*.log linguist-language=python
