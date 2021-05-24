@@ -1,0 +1,962 @@
+model: raw.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.730086
+[100]	valid_0's auc: 0.733742
+[150]	valid_0's auc: 0.73575
+[200]	valid_0's auc: 0.736794
+[250]	valid_0's auc: 0.737015
+[300]	valid_0's auc: 0.737061
+[350]	valid_0's auc: 0.737095
+[400]	valid_0's auc: 0.737039
+Early stopping, best iteration is:
+[355]	valid_0's auc: 0.737113
+val f1 score: 0.4586
+test f1 score: 0.4302
+                 column  importance
+0                  file        5276
+1       http_user_agent        1435
+2  http_x_forwarded_for        1105
+3                  time         851
+4       body_bytes_sent         646
+5          http_referer         415
+6           remote_addr         290
+7                   pno         249
+8          request_time         158
+9                    Id         115
+
+model: group.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.730016
+[100]	valid_0's auc: 0.733641
+[150]	valid_0's auc: 0.735547
+[200]	valid_0's auc: 0.736363
+[250]	valid_0's auc: 0.736777
+[300]	valid_0's auc: 0.736906
+[350]	valid_0's auc: 0.736916
+[400]	valid_0's auc: 0.736814
+Early stopping, best iteration is:
+[364]	valid_0's auc: 0.736938
+val f1 score: 0.459
+test f1 score: 0.4307
+                              column  importance
+0                               file         910
+1              file.http_referer.pno         895
+2                  file.http_referer         849
+3                           file.pno         625
+4                http_user_agent.pno         525
+5                               time         494
+6                            file.Id         455
+7  file.http_referer.http_user_agent         409
+8                        file.pno.Id         387
+9           file.http_referer.pno.Id         372
+
+model: count.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.828146
+[100]	valid_0's auc: 0.833585
+[150]	valid_0's auc: 0.835159
+[200]	valid_0's auc: 0.835843
+[250]	valid_0's auc: 0.836209
+[300]	valid_0's auc: 0.836488
+[350]	valid_0's auc: 0.836516
+Early stopping, best iteration is:
+[328]	valid_0's auc: 0.836561
+val f1 score: 0.548
+test f1 score: 0.5167
+                 column  importance
+0                  file        4079
+1       http_user_agent        1319
+2                  time         918
+3  http_x_forwarded_for         430
+4       body_bytes_sent         428
+5                   pno         239
+6           remote_addr         228
+7          http_referer         219
+8          request_time         192
+9                    Id          94
+
+model: countday.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.830662
+[100]	valid_0's auc: 0.835528
+[150]	valid_0's auc: 0.837048
+[200]	valid_0's auc: 0.837663
+[250]	valid_0's auc: 0.838094
+[300]	valid_0's auc: 0.838492
+[350]	valid_0's auc: 0.83868
+[400]	valid_0's auc: 0.838864
+[450]	valid_0's auc: 0.838956
+[500]	valid_0's auc: 0.838963
+[550]	valid_0's auc: 0.839115
+[600]	valid_0's auc: 0.839172
+[650]	valid_0's auc: 0.83927
+[700]	valid_0's auc: 0.839319
+Early stopping, best iteration is:
+[676]	valid_0's auc: 0.839324
+val f1 score: 0.5501
+test f1 score: 0.516
+                 column  importance
+0                  file        7685
+1       body_bytes_sent        2912
+2       http_user_agent        2749
+3                  time        2337
+4  http_x_forwarded_for        1128
+5           remote_addr         590
+6          http_referer         322
+7                   pno         279
+8          request_time         232
+9                    Id         105
+
+
+model: counthour.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.830423
+[100]	valid_0's auc: 0.83537
+[150]	valid_0's auc: 0.836941
+[200]	valid_0's auc: 0.837632
+[250]	valid_0's auc: 0.837989
+[300]	valid_0's auc: 0.838309
+[350]	valid_0's auc: 0.838504
+[400]	valid_0's auc: 0.838659
+[450]	valid_0's auc: 0.838753
+[500]	valid_0's auc: 0.838826
+[550]	valid_0's auc: 0.83894
+[600]	valid_0's auc: 0.83907
+[650]	valid_0's auc: 0.839227
+[700]	valid_0's auc: 0.839273
+[750]	valid_0's auc: 0.839299
+Early stopping, best iteration is:
+[745]	valid_0's auc: 0.839303
+val f1 score: 0.55
+test f1 score: 0.514
+                   column  importance
+0                    file        8217
+1         body_bytes_sent        3468
+2         http_user_agent        3020
+3                    time        2582
+4    http_x_forwarded_for        1312
+5             remote_addr         700
+6            http_referer         324
+7                     pno         280
+8            request_time         189
+9  counthour.request_time         131
+
+
+model: countminute.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.835749
+[100]	valid_0's auc: 0.841099
+[150]	valid_0's auc: 0.842656
+[200]	valid_0's auc: 0.843412
+[250]	valid_0's auc: 0.843817
+[300]	valid_0's auc: 0.84404
+[350]	valid_0's auc: 0.844198
+[400]	valid_0's auc: 0.844356
+[450]	valid_0's auc: 0.844427
+[500]	valid_0's auc: 0.844477
+[550]	valid_0's auc: 0.844672
+[600]	valid_0's auc: 0.844715
+[650]	valid_0's auc: 0.844731
+[700]	valid_0's auc: 0.844748
+[750]	valid_0's auc: 0.844756
+Early stopping, best iteration is:
+[738]	valid_0's auc: 0.844766
+val f1 score: 0.5654
+test f1 score: 0.5314
+                 column  importance
+0                  file        8020
+1       body_bytes_sent        3615
+2       http_user_agent        2833
+3                  time        2530
+4  http_x_forwarded_for        1610
+5           remote_addr         785
+6          http_referer         355
+7                   pno         230
+8          request_time         195
+9           time_second         126
+
+
+model: countsecond.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.772219
+[100]	valid_0's auc: 0.776537
+[150]	valid_0's auc: 0.778364
+[200]	valid_0's auc: 0.779248
+[250]	valid_0's auc: 0.77944
+[300]	valid_0's auc: 0.779519
+[350]	valid_0's auc: 0.779542
+Early stopping, best iteration is:
+[322]	valid_0's auc: 0.779568
+val f1 score: 0.5103
+test f1 score: 0.4788
+                 column  importance
+0                  file        4547
+1       http_user_agent        1177
+2  http_x_forwarded_for        1000
+3                  time         722
+4       body_bytes_sent         462
+5          http_referer         355
+6           remote_addr         240
+7                   pno         183
+8          request_time         124
+9                    Id         102
+
+model: cumcount.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.766325
+[100]	valid_0's auc: 0.772557
+[150]	valid_0's auc: 0.77458
+[200]	valid_0's auc: 0.775781
+[250]	valid_0's auc: 0.776456
+[300]	valid_0's auc: 0.776898
+[350]	valid_0's auc: 0.777087
+[400]	valid_0's auc: 0.777442
+[450]	valid_0's auc: 0.777463
+[500]	valid_0's auc: 0.777607
+Did not meet early stopping. Best iteration is:
+[500]	valid_0's auc: 0.777607
+val f1 score: 0.4865
+test f1 score: 0.4629
+                 column  importance
+0                  file        6176
+1       http_user_agent        1917
+2                  time        1481
+3       body_bytes_sent        1476
+4  http_x_forwarded_for        1069
+5           remote_addr         400
+6          http_referer         335
+7                   pno         258
+8          request_time         151
+9                    Id         100
+
+model: recumcount.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.812091
+[100]	valid_0's auc: 0.818204
+[150]	valid_0's auc: 0.820474
+[200]	valid_0's auc: 0.821451
+[250]	valid_0's auc: 0.821902
+[300]	valid_0's auc: 0.822173
+[350]	valid_0's auc: 0.822397
+[400]	valid_0's auc: 0.822587
+[450]	valid_0's auc: 0.822659
+[500]	valid_0's auc: 0.822674
+Did not meet early stopping. Best iteration is:
+[468]	valid_0's auc: 0.822674
+val f1 score: 0.5537
+test f1 score: 0.5042
+                    column  importance
+0                     file        5955
+1          http_user_agent        1819
+2                     time        1419
+3          body_bytes_sent        1102
+4     http_x_forwarded_for         825
+5              remote_addr         343
+6             http_referer         316
+7                      pno         262
+8             request_time         147
+9  recumcount.request_time         114
+
+model: cumcountday.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.769169
+[100]	valid_0's auc: 0.775667
+[150]	valid_0's auc: 0.778118
+[200]	valid_0's auc: 0.779452
+[250]	valid_0's auc: 0.78029
+[300]	valid_0's auc: 0.780916
+[350]	valid_0's auc: 0.781182
+[400]	valid_0's auc: 0.781482
+[450]	valid_0's auc: 0.781456
+Early stopping, best iteration is:
+[401]	valid_0's auc: 0.781482
+val f1 score: 0.4885
+test f1 score: 0.4607
+                 column  importance
+0                  file        5155
+1       http_user_agent        1481
+2                  time        1066
+3  http_x_forwarded_for         944
+4       body_bytes_sent         854
+5           remote_addr         308
+6          http_referer         291
+7                   pno         257
+8          request_time         139
+9                    Id         101
+
+model: cumcounthour.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.769169
+[100]	valid_0's auc: 0.775667
+[150]	valid_0's auc: 0.778118
+[200]	valid_0's auc: 0.779452
+[250]	valid_0's auc: 0.78029
+[300]	valid_0's auc: 0.780916
+[350]	valid_0's auc: 0.781182
+[400]	valid_0's auc: 0.781482
+[450]	valid_0's auc: 0.781456
+Early stopping, best iteration is:
+[401]	valid_0's auc: 0.781482
+val f1 score: 0.4885
+test f1 score: 0.4607
+                 column  importance
+0                  file        5155
+1       http_user_agent        1481
+2                  time        1066
+3  http_x_forwarded_for         944
+4       body_bytes_sent         854
+5           remote_addr         308
+6          http_referer         291
+7                   pno         257
+8          request_time         139
+9                    Id         101
+
+model: cumcountminute.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.762173
+[100]	valid_0's auc: 0.767128
+[150]	valid_0's auc: 0.769062
+[200]	valid_0's auc: 0.77024
+[250]	valid_0's auc: 0.770739
+[300]	valid_0's auc: 0.770854
+[350]	valid_0's auc: 0.771068
+[400]	valid_0's auc: 0.771145
+[450]	valid_0's auc: 0.771176
+[500]	valid_0's auc: 0.771172
+Did not meet early stopping. Best iteration is:
+[494]	valid_0's auc: 0.77118
+val f1 score: 0.4889
+test f1 score: 0.4604
+                 column  importance
+0                  file        6169
+1       http_user_agent        1813
+2       body_bytes_sent        1614
+3                  time        1458
+4  http_x_forwarded_for        1420
+5           remote_addr         407
+6          http_referer         396
+7                   pno         208
+8          request_time         150
+9                    Id         111
+
+model: recumcountday.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.819185
+[100]	valid_0's auc: 0.82434
+[150]	valid_0's auc: 0.826157
+[200]	valid_0's auc: 0.827017
+[250]	valid_0's auc: 0.8275
+[300]	valid_0's auc: 0.827866
+[350]	valid_0's auc: 0.828063
+[400]	valid_0's auc: 0.828248
+[450]	valid_0's auc: 0.828342
+[500]	valid_0's auc: 0.828367
+Did not meet early stopping. Best iteration is:
+[488]	valid_0's auc: 0.828373
+val f1 score: 0.5624
+test f1 score: 0.5296
+                 column  importance
+0                  file        6091
+1       http_user_agent        1826
+2       body_bytes_sent        1391
+3                  time        1361
+4  http_x_forwarded_for        1195
+5           remote_addr         394
+6          http_referer         320
+7                   pno         279
+8          request_time         182
+9                    Id          99
+
+model: recumcounthour.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.819185
+[100]	valid_0's auc: 0.82434
+[150]	valid_0's auc: 0.826157
+[200]	valid_0's auc: 0.827017
+[250]	valid_0's auc: 0.8275
+[300]	valid_0's auc: 0.827866
+[350]	valid_0's auc: 0.828063
+[400]	valid_0's auc: 0.828248
+[450]	valid_0's auc: 0.828342
+[500]	valid_0's auc: 0.828367
+Did not meet early stopping. Best iteration is:
+[488]	valid_0's auc: 0.828373
+val f1 score: 0.5624
+test f1 score: 0.5296
+                 column  importance
+0                  file        6091
+1       http_user_agent        1826
+2       body_bytes_sent        1391
+3                  time        1361
+4  http_x_forwarded_for        1195
+5           remote_addr         394
+6          http_referer         320
+7                   pno         279
+8          request_time         182
+9                    Id          99
+
+model: recumcountminute.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.825188
+[100]	valid_0's auc: 0.829687
+[150]	valid_0's auc: 0.831357
+[200]	valid_0's auc: 0.83213
+[250]	valid_0's auc: 0.8325
+[300]	valid_0's auc: 0.832787
+[350]	valid_0's auc: 0.832879
+[400]	valid_0's auc: 0.83292
+[450]	valid_0's auc: 0.832919
+Early stopping, best iteration is:
+[412]	valid_0's auc: 0.832928
+val f1 score: 0.5764
+test f1 score: 0.5434
+                 column  importance
+0                  file        5090
+1       http_user_agent        1529
+2  http_x_forwarded_for        1240
+3                  time        1081
+4       body_bytes_sent         853
+5           remote_addr         393
+6          http_referer         308
+7                   pno         235
+8          request_time         185
+9                    Id         112
+
+model: cumcountratioday.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.769452
+[100]	valid_0's auc: 0.77605
+[150]	valid_0's auc: 0.779389
+[200]	valid_0's auc: 0.781019
+[250]	valid_0's auc: 0.782234
+[300]	valid_0's auc: 0.782905
+[350]	valid_0's auc: 0.783204
+[400]	valid_0's auc: 0.783428
+[450]	valid_0's auc: 0.783523
+Early stopping, best iteration is:
+[440]	valid_0's auc: 0.783551
+val f1 score: 0.4902
+test f1 score: 0.4636
+                 column  importance
+0                  file        5769
+1       http_user_agent        1580
+2  http_x_forwarded_for        1137
+3                  time        1111
+4       body_bytes_sent         914
+5           remote_addr         344
+6                   pno         338
+7          http_referer         337
+8          request_time         163
+9                    Id         105
+
+model: cumcountratiominute.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.765279
+[100]	valid_0's auc: 0.771089
+[150]	valid_0's auc: 0.773722
+[200]	valid_0's auc: 0.774957
+[250]	valid_0's auc: 0.77582
+[300]	valid_0's auc: 0.776148
+[350]	valid_0's auc: 0.776312
+[400]	valid_0's auc: 0.77635
+[450]	valid_0's auc: 0.776382
+[500]	valid_0's auc: 0.77642
+Did not meet early stopping. Best iteration is:
+[474]	valid_0's auc: 0.776458
+val f1 score: 0.493
+test f1 score: 0.4657
+                 column  importance
+0                  file        5999
+1       http_user_agent        1743
+2  http_x_forwarded_for        1386
+3                  time        1307
+4       body_bytes_sent        1278
+5           remote_addr         391
+6          http_referer         376
+7                   pno         276
+8          request_time         172
+9                    Id         112
+
+model: diffnext.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.839811
+[100]	valid_0's auc: 0.845201
+[150]	valid_0's auc: 0.846863
+[200]	valid_0's auc: 0.847648
+[250]	valid_0's auc: 0.847982
+[300]	valid_0's auc: 0.848264
+[350]	valid_0's auc: 0.848431
+[400]	valid_0's auc: 0.848534
+[450]	valid_0's auc: 0.848624
+[500]	valid_0's auc: 0.848733
+Did not meet early stopping. Best iteration is:
+[489]	valid_0's auc: 0.848739
+val f1 score: 0.5984
+test f1 score: 0.575
+                 column  importance
+0                  file        5756
+1       http_user_agent        1887
+2                  time        1409
+3       body_bytes_sent        1351
+4  http_x_forwarded_for        1323
+5           remote_addr         507
+6                   pno         321
+7          http_referer         303
+8          request_time         186
+9  diffnext.remote_addr         118
+
+model: diffprevious.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.771751
+[100]	valid_0's auc: 0.778279
+[150]	valid_0's auc: 0.780604
+[200]	valid_0's auc: 0.781764
+[250]	valid_0's auc: 0.782705
+[300]	valid_0's auc: 0.783024
+[350]	valid_0's auc: 0.783239
+[400]	valid_0's auc: 0.783365
+[450]	valid_0's auc: 0.783423
+[500]	valid_0's auc: 0.78352
+Did not meet early stopping. Best iteration is:
+[482]	valid_0's auc: 0.783555
+val f1 score: 0.5098
+test f1 score: 0.4834
+                 column  importance
+0                  file        6119
+1       http_user_agent        1773
+2       body_bytes_sent        1378
+3                  time        1367
+4  http_x_forwarded_for        1336
+5           remote_addr         397
+6          http_referer         386
+7                   pno         265
+8          request_time         160
+9                    Id         106
+
+model: diffnext_2.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.771816
+[100]	valid_0's auc: 0.778273
+[150]	valid_0's auc: 0.780652
+[200]	valid_0's auc: 0.782062
+[250]	valid_0's auc: 0.782832
+[300]	valid_0's auc: 0.783269
+[350]	valid_0's auc: 0.78354
+[400]	valid_0's auc: 0.783702
+[450]	valid_0's auc: 0.783806
+[500]	valid_0's auc: 0.783971
+Did not meet early stopping. Best iteration is:
+[500]	valid_0's auc: 0.783971
+val f1 score: 0.5104
+test f1 score: 0.4866
+                 column  importance
+0                  file        6346
+1       http_user_agent        1832
+2       body_bytes_sent        1466
+3                  time        1437
+4  http_x_forwarded_for        1178
+5           remote_addr         535
+6          http_referer         332
+7                   pno         248
+8          request_time         190
+9              time_day          95
+
+model: diffprevious_2.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.756668
+[100]	valid_0's auc: 0.762415
+[150]	valid_0's auc: 0.76508
+[200]	valid_0's auc: 0.766463
+[250]	valid_0's auc: 0.76705
+[300]	valid_0's auc: 0.76739
+[350]	valid_0's auc: 0.767576
+[400]	valid_0's auc: 0.76765
+[450]	valid_0's auc: 0.767641
+Early stopping, best iteration is:
+[427]	valid_0's auc: 0.767692
+val f1 score: 0.4861
+test f1 score: 0.4582
+                 column  importance
+0                  file        5540
+1       http_user_agent        1582
+2                  time        1171
+3  http_x_forwarded_for        1067
+4       body_bytes_sent        1035
+5           remote_addr         383
+6          http_referer         337
+7                   pno         247
+8          request_time         158
+9                    Id         100
+
+model: diffnext_5.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.753166
+[100]	valid_0's auc: 0.758336
+[150]	valid_0's auc: 0.760844
+[200]	valid_0's auc: 0.762234
+[250]	valid_0's auc: 0.762894
+[300]	valid_0's auc: 0.763207
+[350]	valid_0's auc: 0.763427
+[400]	valid_0's auc: 0.76356
+[450]	valid_0's auc: 0.763544
+Early stopping, best iteration is:
+[440]	valid_0's auc: 0.763567
+val f1 score: 0.4857
+test f1 score: 0.4573
+                 column  importance
+0                  file        5749
+1       http_user_agent        1657
+2                  time        1282
+3       body_bytes_sent        1101
+4  http_x_forwarded_for        1056
+5           remote_addr         457
+6          http_referer         345
+7                   pno         232
+8          request_time         179
+9                    Id         101
+
+model: diffprevious_5.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.745883
+[100]	valid_0's auc: 0.750811
+[150]	valid_0's auc: 0.75315
+[200]	valid_0's auc: 0.754284
+[250]	valid_0's auc: 0.75479
+[300]	valid_0's auc: 0.754971
+[350]	valid_0's auc: 0.755181
+[400]	valid_0's auc: 0.755315
+[450]	valid_0's auc: 0.755267
+Early stopping, best iteration is:
+[403]	valid_0's auc: 0.755321
+val f1 score: 0.4768
+test f1 score: 0.4502
+                 column  importance
+0                  file        5340
+1       http_user_agent        1546
+2                  time        1121
+3  http_x_forwarded_for        1044
+4       body_bytes_sent         935
+5          http_referer         340
+6           remote_addr         335
+7                   pno         238
+8          request_time         161
+9                    Id         106
+
+
+model: CatBoostEncoder.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.736144
+[100]	valid_0's auc: 0.740635
+[150]	valid_0's auc: 0.743298
+[200]	valid_0's auc: 0.744374
+[250]	valid_0's auc: 0.744822
+[300]	valid_0's auc: 0.74497
+[350]	valid_0's auc: 0.745029
+[400]	valid_0's auc: 0.745023
+Early stopping, best iteration is:
+[352]	valid_0's auc: 0.745042
+val f1 score: 0.4652
+test f1 score: 0.4378
+                 column  importance
+0                  file        4941
+1       http_user_agent        1292
+2  http_x_forwarded_for         896
+3                  time         824
+4       body_bytes_sent         507
+5          http_referer         422
+6           remote_addr         301
+7  CatBoostEncoder.file         207
+8                   pno         204
+9          request_time         154
+
+
+model: LeaveOneOutEncoder.
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.736146
+[100]	valid_0's auc: 0.740741
+[150]	valid_0's auc: 0.74316
+[200]	valid_0's auc: 0.744261
+[250]	valid_0's auc: 0.744814
+[300]	valid_0's auc: 0.744989
+[350]	valid_0's auc: 0.745058
+Early stopping, best iteration is:
+[329]	valid_0's auc: 0.745084
+val f1 score: 0.4652
+test f1 score: 0.4376
+                    column  importance
+0                     file        4627
+1          http_user_agent        1213
+2     http_x_forwarded_for         879
+3                     time         695
+4          body_bytes_sent         426
+5             http_referer         409
+6              remote_addr         282
+7  LeaveOneOutEncoder.file         200
+8                      pno         198
+9             request_time         146
+
+
+model: top200.offline
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.871972
+[100]	valid_0's auc: 0.878983
+[150]	valid_0's auc: 0.881211
+[200]	valid_0's auc: 0.882142
+[250]	valid_0's auc: 0.882756
+[300]	valid_0's auc: 0.883022
+[350]	valid_0's auc: 0.883254
+[400]	valid_0's auc: 0.883497
+[450]	valid_0's auc: 0.883625
+[500]	valid_0's auc: 0.883733
+Did not meet early stopping. Best iteration is:
+[500]	valid_0's auc: 0.883733
+val f1 score: 0.6352
+test f1 score: 0.6098
+                                              column  importance
+0                                               file        5391
+1                                    http_user_agent        2007
+2                                               time        1472
+3                                    body_bytes_sent        1170
+4                               http_x_forwarded_for         785
+5                                        remote_addr         364
+6                                                pno         254
+7                                       http_referer         233
+8                                       request_time         181
+9  diffnext.remote_addr.http_referer.http_user_agent         172
+
+model: top200.online
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.854782
+[100]	valid_0's auc: 0.860739
+[150]	valid_0's auc: 0.862763
+[200]	valid_0's auc: 0.863581
+[250]	valid_0's auc: 0.864325
+[300]	valid_0's auc: 0.864724
+[350]	valid_0's auc: 0.865081
+[400]	valid_0's auc: 0.865284
+[450]	valid_0's auc: 0.865441
+[500]	valid_0's auc: 0.865567
+[550]	valid_0's auc: 0.865629
+[600]	valid_0's auc: 0.865765
+[650]	valid_0's auc: 0.865908
+[700]	valid_0's auc: 0.865951
+[750]	valid_0's auc: 0.866061
+[800]	valid_0's auc: 0.866124
+[850]	valid_0's auc: 0.866177
+[900]	valid_0's auc: 0.866146
+Early stopping, best iteration is:
+[853]	valid_0's auc: 0.866198
+val f1 score: 0.6092
+                                              column  importance
+0                                               file        8713
+1                                    http_user_agent        3439
+2                                               time        3128
+3                                    body_bytes_sent        3050
+4                               http_x_forwarded_for        1414
+5                                        remote_addr         706
+6                                                pno         338
+7                                       http_referer         292
+8                                       request_time         262
+9  diffnext.remote_addr.file.http_referer.http_us...         198
+0    2564036
+1     626598
+Name: y_label, dtype: int64
+
+top25.online
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.825872
+[100]	valid_0's auc: 0.830223
+[150]	valid_0's auc: 0.831952
+[200]	valid_0's auc: 0.832748
+[250]	valid_0's auc: 0.833279
+[300]	valid_0's auc: 0.833495
+[350]	valid_0's auc: 0.833622
+[400]	valid_0's auc: 0.833929
+[450]	valid_0's auc: 0.833964
+[500]	valid_0's auc: 0.834048
+[550]	valid_0's auc: 0.834086
+Early stopping, best iteration is:
+[545]	valid_0's auc: 0.83414
+val f1 score: 0.576
+                                              column  importance
+0                                               file        6463
+1                                    http_user_agent        2051
+2                                               time        1743
+3                               http_x_forwarded_for        1265
+4                                    body_bytes_sent        1234
+5                                        remote_addr         539
+6                                                pno         394
+7                                       http_referer         300
+8                                       request_time         231
+9  diffnext.remote_addr.file.http_referer.http_us...         210
+0    2564036
+1     626598
+Name: y_label, dtype: int64
+
+top50.online
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.842878
+[100]	valid_0's auc: 0.847737
+[150]	valid_0's auc: 0.849393
+[200]	valid_0's auc: 0.850286
+[250]	valid_0's auc: 0.850849
+[300]	valid_0's auc: 0.85115
+[350]	valid_0's auc: 0.851383
+[400]	valid_0's auc: 0.851552
+[450]	valid_0's auc: 0.851741
+[500]	valid_0's auc: 0.851844
+[550]	valid_0's auc: 0.851956
+[600]	valid_0's auc: 0.85205
+[650]	valid_0's auc: 0.852186
+[700]	valid_0's auc: 0.852313
+[750]	valid_0's auc: 0.852418
+[800]	valid_0's auc: 0.852464
+[850]	valid_0's auc: 0.852519
+[900]	valid_0's auc: 0.852534
+Early stopping, best iteration is:
+[882]	valid_0's auc: 0.852586
+val f1 score: 0.5813
+                                              column  importance
+0                                               file        9103
+1                                    body_bytes_sent        3617
+2                                    http_user_agent        3547
+3                                               time        3099
+4                               http_x_forwarded_for        1791
+5                                        remote_addr         851
+6                                                pno         437
+7                                       http_referer         334
+8                                       request_time         270
+9  diffnext.remote_addr.file.http_referer.http_us...         245
+0    2564036
+1     626598
+Name: y_label, dtype: int64
+
+top100.online
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.844901
+[100]	valid_0's auc: 0.850508
+[150]	valid_0's auc: 0.852948
+[200]	valid_0's auc: 0.853843
+[250]	valid_0's auc: 0.854489
+[300]	valid_0's auc: 0.854923
+[350]	valid_0's auc: 0.8553
+[400]	valid_0's auc: 0.855472
+[450]	valid_0's auc: 0.855687
+[500]	valid_0's auc: 0.855899
+[550]	valid_0's auc: 0.856006
+[600]	valid_0's auc: 0.856122
+[650]	valid_0's auc: 0.85627
+[700]	valid_0's auc: 0.856312
+[750]	valid_0's auc: 0.856373
+[800]	valid_0's auc: 0.856404
+[850]	valid_0's auc: 0.856537
+[900]	valid_0's auc: 0.856556
+[950]	valid_0's auc: 0.856652
+[1000]	valid_0's auc: 0.856777
+[1050]	valid_0's auc: 0.856817
+[1100]	valid_0's auc: 0.856833
+[1150]	valid_0's auc: 0.856868
+[1200]	valid_0's auc: 0.856886
+[1250]	valid_0's auc: 0.856896
+[1300]	valid_0's auc: 0.856914
+Early stopping, best iteration is:
+[1295]	valid_0's auc: 0.856915
+val f1 score: 0.5835
+                                              column  importance
+0                                               file       12044
+1                                    body_bytes_sent        7022
+2                                    http_user_agent        5396
+3                                               time        4696
+4                               http_x_forwarded_for        2368
+5                                        remote_addr        1488
+6                                                pno         392
+7                                       http_referer         381
+8                                       request_time         281
+9  diffnext.remote_addr.file.http_referer.http_us...         216
+0    2564036
+1     626598
+Name: y_label, dtype: int64
+
+top150.online
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.855293
+[100]	valid_0's auc: 0.861556
+[150]	valid_0's auc: 0.863606
+[200]	valid_0's auc: 0.86461
+[250]	valid_0's auc: 0.865195
+[300]	valid_0's auc: 0.865581
+[350]	valid_0's auc: 0.865906
+[400]	valid_0's auc: 0.866172
+[450]	valid_0's auc: 0.866343
+[500]	valid_0's auc: 0.866522
+[550]	valid_0's auc: 0.866674
+[600]	valid_0's auc: 0.866787
+[650]	valid_0's auc: 0.867003
+[700]	valid_0's auc: 0.867036
+[750]	valid_0's auc: 0.867121
+[800]	valid_0's auc: 0.867174
+[850]	valid_0's auc: 0.867274
+[900]	valid_0's auc: 0.867306
+[950]	valid_0's auc: 0.867397
+[1000]	valid_0's auc: 0.867459
+[1050]	valid_0's auc: 0.867519
+[1100]	valid_0's auc: 0.867544
+Early stopping, best iteration is:
+[1091]	valid_0's auc: 0.86755
+val f1 score: 0.6108
+                                              column  importance
+0                                               file       10450
+1                                    body_bytes_sent        4916
+2                                    http_user_agent        4577
+3                                               time        3887
+4                               http_x_forwarded_for        1848
+5                                        remote_addr        1094
+6                                                pno         376
+7                                       http_referer         355
+8                                       request_time         285
+9  diffnext.remote_addr.file.http_referer.http_us...         214
+0    2564036
+1     626598
+Name: y_label, dtype: int64
+
+top200.online
+Training until validation scores don't improve for 50 rounds
+[50]	valid_0's auc: 0.854896
+[100]	valid_0's auc: 0.861332
+[150]	valid_0's auc: 0.8635
+[200]	valid_0's auc: 0.864492
+[250]	valid_0's auc: 0.865289
+[300]	valid_0's auc: 0.865752
+[350]	valid_0's auc: 0.866122
+[400]	valid_0's auc: 0.866296
+[450]	valid_0's auc: 0.866423
+[500]	valid_0's auc: 0.866559
+[550]	valid_0's auc: 0.866663
+[600]	valid_0's auc: 0.866876
+[650]	valid_0's auc: 0.867048
+[700]	valid_0's auc: 0.867179
+[750]	valid_0's auc: 0.867247
+[800]	valid_0's auc: 0.867336
+[850]	valid_0's auc: 0.867376
+[900]	valid_0's auc: 0.867372
+[950]	valid_0's auc: 0.867488
+[1000]	valid_0's auc: 0.867575
+[1050]	valid_0's auc: 0.867592
+[1100]	valid_0's auc: 0.867609
+Early stopping, best iteration is:
+[1069]	valid_0's auc: 0.867628
+val f1 score: 0.6105
+                                              column  importance
+0                                               file       10280
+1                                    body_bytes_sent        4593
+2                                    http_user_agent        4405
+3                                               time        3971
+4                               http_x_forwarded_for        1766
+5                                        remote_addr        1043
+6                                                pno         368
+7                                       http_referer         320
+8                                       request_time         297
+9  diffnext.remote_addr.http_referer.http_user_agent         213
+0    2564036
+1     626598
+Name: y_label, dtype: int64
